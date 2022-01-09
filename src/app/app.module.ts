@@ -5,11 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GetDataComponent } from './get-data/get-data.component';
+import { PostDataComponent } from './post-data/post-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GetDataComponent
+    GetDataComponent,
+    PostDataComponent
   ],
   imports: [
     BrowserModule,

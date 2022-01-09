@@ -22,6 +22,11 @@ export class HttpGetDataService {
     return this.httpClient.get<any>(url, this.httpOptions);
   }
 
+  public postComments(payload: any): Observable<any> {
+    const url = `${this.REST_API_SERVER}/comments`;
+    return this.httpClient.post<any>(url, payload, this.httpOptions);
+  }
+
   public getApiUser(n: number = 1): Observable<any> {
     const url = `${this.RANDOM_USER_API}` + n;
     return this.httpClient.get<any>(url, this.httpOptions);
